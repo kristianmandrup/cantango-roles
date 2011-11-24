@@ -1,7 +1,13 @@
 source :rubygems
 
-gem 'rails', '>= 3.1'
-gem 'cantango-core'
+group :default do
+  gem 'rails', '>= 3.1'
+  gem 'sugar-high',       '>= 0.6.0'
+  gem 'sweetloader',      '~> 0.1.0'
+  gem 'hashie'
+  
+  gem 'cantango-core',  :git => 'git://github.com/kristianmandrup/cantango-core.git'
+end
 
 group :development do
   gem "bundler",  ">= 1.1.rc"
