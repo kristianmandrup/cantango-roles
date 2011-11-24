@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "cantango-roles"
   gem.homepage = "http://github.com/kristianmandrup/cantango-roles"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Roles extension for CanTango}
+  gem.description = %Q{Roles and Role groups for CanTango}
   gem.email = "kmandrup@gmail.com"
   gem.authors = ["Kristian Mandrup"]
   # dependencies defined in Gemfile
