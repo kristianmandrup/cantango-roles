@@ -2,7 +2,11 @@
 
 Roles and Role groups extension for [CanTango](https://github.com/kristianmandrup/cantango)
 
-The Configuration DSL has now been almost fully "spec'ed".
+* Roles and RoleGroups Configuration Registry
+* Role and RoleGroup Permits for the Permits Ability executor (formerly engine)
+* Role and RoleGroup Permit Genenerators
+* Role and RoleGroup Filters
+* Role and RoleGroup Helpers
 
 ## Contributing to cantango-config
  
