@@ -26,6 +26,8 @@ module CanTango
 
       protected
 
+      include CanTango::Permit::Helper::RoleMatcher
+
       include CanTango::Helpers::RoleMethods
       extend CanTango::Helpers::RoleMethods
 
