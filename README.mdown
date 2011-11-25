@@ -2,13 +2,33 @@
 
 Roles and Role groups extension for [CanTango](https://github.com/kristianmandrup/cantango)
 
-* Roles and RoleGroups Configuration Registry
-* Role and RoleGroup Permits for the Permits Ability executor (formerly engine)
-* Role and RoleGroup Permit Genenerators
-* Role and RoleGroup Filters
-* Role and RoleGroup Helpers
+## Configuration Registry
 
-## Contributing to cantango-config
+Roles and RoleGroups configuration via a Registry.
+
+## Permits
+
+Role and RoleGroup Permits for the Permits engine Ability executor.
+
+## Permit Generators
+
+Role and RoleGroup Permit Generators
+
+`rails g cantango:role_permit admin`
+
+*Role group*
+
+`rails g cantango:role_permit admin --group`
+
+## Filters
+
+Role and RoleGroup filters can be used to filter out specific Role and RoleGroup Permits.
+
+## Helpers
+
+Role and RoleGroup helper methods which can be reused in various places, such as Ability executors, Permits etc.
+
+## Contributing to cantango-roles
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
