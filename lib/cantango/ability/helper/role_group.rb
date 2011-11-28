@@ -2,7 +2,7 @@ module CanTango
   class Ability
     module Helper
       module RoleGroup
-        include CanTango::Helpers::RoleMethods
+        include CanTango::Helpers::RoleGroup
 
         # return list of symbols for role groups the user belongs to
         def role_groups

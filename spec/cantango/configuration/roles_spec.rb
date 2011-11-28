@@ -1,5 +1,4 @@
-require 'rspec'
-require 'cantango'
+require 'spec_helper'
 require 'cantango/configuration/role_registry_ex'
 
 describe CanTango::Configuration::Roles do
@@ -10,6 +9,3 @@ describe CanTango::Configuration::Roles do
     let (:list) { :roles_list }
   end
 end
-
-
-

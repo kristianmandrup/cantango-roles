@@ -2,7 +2,7 @@ module CanTango
   class Ability
     module Helper
       module Role
-        include CanTango::Helpers::RoleMethods
+        include CanTango::Helpers::Role
 
         # return list roles the user has
         def roles

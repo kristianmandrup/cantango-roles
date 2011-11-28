@@ -1,14 +1,10 @@
 module CanTango
   module Helpers
     module Role
-      def has_role_meth
-        config.roles.has_method
+      def role_method name
+        config.roles.method_names[name]
       end
-
-      def roles_list_meth
-        config.roles.list_method
-      end
-
+      
       def config
         CanTango.config
       end
