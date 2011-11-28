@@ -1,3 +1,4 @@
+# Fix: from cantango-config
 require 'cantango/configuration/shared/registry_ex'
 
 shared_examples_for 'Role Registry' do

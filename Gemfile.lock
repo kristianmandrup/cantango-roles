@@ -1,11 +1,11 @@
 GIT
-  remote: git://github.com/kristianmandrup/cantango-core.git
-  revision: 500101d5ccdc64bf5e4eaaa17f035b4babd6a2a7
+  remote: git://github.com/kristianmandrup/cantango-config.git
+  revision: c11aead6e1325c9bc2ae6c459df0f8187667cbd4
   specs:
-    cantango-core (1.0.0.beta1)
-      cancan (>= 1.4)
+    cantango-config (0.1.2)
+      cantango-core
       hashie
-      rails (>= 3.0.1)
+      rails (>= 3.1)
       sugar-high (>= 0.6.0)
       sweetloader (~> 0.1.0)
 
@@ -43,18 +43,21 @@ GEM
     arel (2.2.1)
     builder (3.0.0)
     cancan (1.6.7)
+    cantango-core (0.1.2)
+      cancan (>= 1.4)
+      hashie
+      rails (>= 3.0.1)
+      sugar-high (>= 0.6.0)
+      sweetloader (~> 0.1.0)
     colorize (0.5.8)
     cutter (0.8.2)
       activesupport (>= 2.3.5)
       colorize (>= 0.5)
     database_cleaner (0.7.0)
     diff-lcs (1.1.3)
-    dkastner-moneta (1.2.0)
     erubis (2.7.0)
     factory_girl (2.3.1)
       activesupport
-    file-tail (1.0.7)
-      tins (~> 0.3)
     forgery (0.5.0)
     git (1.2.5)
     hashie (1.2.0)
@@ -109,17 +112,6 @@ GEM
     rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.7.0)
-    ruby2ruby (1.3.1)
-      ruby_parser (~> 2.0)
-      sexp_processor (~> 3.0)
-    ruby_parser (2.3.1)
-      sexp_processor (~> 3.0)
-    sexp_processor (3.0.8)
-    sourcify (0.5.0)
-      file-tail (>= 1.0.5)
-      ruby2ruby (>= 1.2.5)
-      ruby_parser (>= 2.0.5)
-      sexp_processor (>= 3.0.5)
     spork (0.8.5)
     sprockets (2.0.3)
       hike (~> 1.2)
@@ -133,7 +125,6 @@ GEM
       i18n
     thor (0.14.6)
     tilt (1.3.3)
-    tins (0.3.2)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
@@ -144,10 +135,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.1.rc)
-  cantango-core!
+  cantango-config!
   cutter
   database_cleaner
-  dkastner-moneta (>= 1.0)
   factory_girl
   forgery
   hashie
@@ -156,7 +146,6 @@ DEPENDENCIES
   rcov
   require_all (~> 1.2.0)
   rspec (>= 2.6.0)
-  sourcify
   spork
   sqlite3
   sugar-high (>= 0.6.0)

@@ -4,6 +4,7 @@ require 'hashie'
 require 'sweetloader'
 
 require 'cantango/core'
+require 'cantango/config'
 
 AutoLoader.namespaces = {:CanTango => 'cantango'}
 
