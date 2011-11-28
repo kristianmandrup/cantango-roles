@@ -1,6 +1,6 @@
 module CanTango
   class Configuration
-    class System < RoleRegistry
+    class System < Registry::Role
       include Singleton
 
       def system= name
