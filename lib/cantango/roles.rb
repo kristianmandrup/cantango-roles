@@ -6,10 +6,6 @@ require 'sweetloader'
 require 'cantango/core'
 require 'cantango/config'
 
-AutoLoader.mode = :require
+SweetLoader.mode = :require
 
-module CanTango
-  autoload_scope :ns => {:CanTango => 'cantango/roles'} do 
-    autoload_modules :Configuration, :Filter, :Helpers
-  end
-end
+require 'cantango/roles_ext'
