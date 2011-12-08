@@ -1,14 +1,3 @@
-GIT
-  remote: git://github.com/kristianmandrup/cantango-config.git
-  revision: e17a6646e319b013255ccf37b9815ad8fdbe6a94
-  specs:
-    cantango-config (0.1.2)
-      cantango-core
-      hashie
-      rails (>= 3.1)
-      sugar-high (>= 0.6.0)
-      sweetloader (~> 0.1.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -43,12 +32,18 @@ GEM
     arel (2.2.1)
     builder (3.0.0)
     cancan (1.6.7)
-    cantango-core (0.1.2)
+    cantango-config (0.1.9.2)
+      cantango-core (~> 0.1.9)
+      hashie (~> 1.2)
+      rails (>= 3.1)
+      sugar-high (>= 0.6.1)
+      sweetloader (~> 0.1.6)
+    cantango-core (0.1.9.2)
       cancan (>= 1.4)
-      hashie
+      hashie (~> 1.2)
       rails (>= 3.0.1)
       sugar-high (>= 0.6.0)
-      sweetloader (~> 0.1.0)
+      sweetloader (~> 0.1.5)
     colorize (0.5.8)
     cutter (0.8.2)
       activesupport (>= 2.3.5)
@@ -60,7 +55,7 @@ GEM
       activesupport
     forgery (0.5.0)
     git (1.2.5)
-    hashie (0.4.0)
+    hashie (1.2.0)
     hike (1.2.1)
     i18n (0.6.0)
     jeweler (1.6.4)
@@ -118,9 +113,9 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.4)
-    sugar-high (0.6.0)
+    sugar-high (0.6.2.1)
       activesupport (>= 3.0.1)
-    sweetloader (0.1.5)
+    sweetloader (0.1.6)
       activesupport (>= 3.0.1)
       i18n
     thor (0.14.6)
@@ -135,12 +130,12 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.1.rc)
-  cantango-config!
+  cantango-config (~> 0.1.8)
   cutter
   database_cleaner
   factory_girl
   forgery
-  hashie (~> 0.4.0)
+  hashie (>= 1.2.0)
   jeweler (>= 1.6.4)
   rails (>= 3.1)
   rcov
@@ -148,5 +143,5 @@ DEPENDENCIES
   rspec (>= 2.6.0)
   spork
   sqlite3
-  sugar-high (>= 0.6.0)
-  sweetloader (~> 0.1.5)
+  sugar-high (>= 0.6.1)
+  sweetloader (>= 0.1.6)

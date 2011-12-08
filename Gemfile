@@ -2,11 +2,11 @@ source :rubygems
 
 group :default do
   gem 'rails',            '>= 3.1'
-  gem 'sugar-high',       '>= 0.6.0'
-  gem 'sweetloader',      '~> 0.1.5'
-  gem 'hashie',           '~> 0.4.0'
+  gem 'sugar-high',       '>= 0.6.1'
+  gem 'sweetloader',      '>= 0.1.6'
+  gem 'hashie',           '>= 1.2.0'
   
-  gem 'cantango-config',  :git => 'git://github.com/kristianmandrup/cantango-config.git'
+  gem 'cantango-config',  '~> 0.1.8'
 end
 
 group :development do

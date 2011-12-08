@@ -9,26 +9,26 @@ CanTango.configure do |config|
 end
 
 
-class UserRolePermit < CanTango::RolePermit
+class UserRolePermit < CanTango::Permit::Role
   def initialize ability
     super
   end
 
   protected
 
-  def static_rules
+  def calculate_rules
     can :read, Comment
   end
 end
 
-class AdminRolePermit < CanTango::RolePermit
+class AdminRolePermit < CanTango::Permit::Role
   def initialize ability
     super
   end
 
   protected
 
-  def static_rules
+  def calculate_rules
     can :read, Post
   end
 end
