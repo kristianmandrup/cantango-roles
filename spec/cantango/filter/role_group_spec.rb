@@ -1,6 +1,5 @@
 require 'spec_helper'
 require 'fixtures/models'
-require 'cantango/rspec'
 
 CanTango.configure do |config|
   config.permission_engine.set :off
@@ -8,28 +7,28 @@ CanTango.configure do |config|
   config.categories.register :blog_items => [Article, Post]
 end
 
-class AdminsRoleGroupPermit < CanTango::RoleGroupPermit
+class AdminsRoleGroupPermit < CanTango::Permit::RoleGroup
   def initialize ability
     super
   end
 
   protected
 
-  def static_rules
+  def calc_rules
     can :publish, Post
     can :write, Article
     can :write, category(:blog_items)
   end
 end
 
-class EditorsRoleGroupPermit < CanTango::RoleGroupPermit
+class EditorsRoleGroupPermit < CanTango::Permit::RoleGroup
   def initialize ability
     super
   end
 
   protected
 
-  def static_rules
+  def calc_rules
     can :publish, category(:blog_items)
   end
 end

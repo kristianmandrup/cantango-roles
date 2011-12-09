@@ -7,7 +7,7 @@ module CanTango
       
       def default_system_apis
         {
-          :troles => {:list => :role_group_list}
+          :troles => {:list => :role_group_list, :has => :in_role_group?}
         }
       end
     end

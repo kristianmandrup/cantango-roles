@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'cantango/configuration/role_registry_ex'
+require 'cantango/configuration/shared/role_registry_ex'
 
 describe CanTango::Configuration::Roles do
   subject { CanTango.config.roles }

@@ -18,7 +18,7 @@ describe CanTango::Helpers::Role do
   end
   
   specify do
-    subject.role_method(:list).should == :role_list?
+    subject.role_method(:list).should == :role_list
   end  
 end
 
