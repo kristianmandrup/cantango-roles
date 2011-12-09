@@ -20,7 +20,6 @@ module SimpleRoles
   end
 
   module InstanceMethods
-
     attr_accessor :role_groups_list
 
     def has_role? role
@@ -32,7 +31,7 @@ module SimpleRoles
     end
 
     def roles_list
-      role.to_s.scan(/\w+/).map{|r| r.to_sym}
+      roles.map{|r| r.to_sym}
     end
 
     def is_in_group? group
@@ -41,7 +40,7 @@ module SimpleRoles
     alias_method :in_role_group?, :is_in_group?
 
     def role_groups_list
-      return role_groups.scan(/\w+/).map(&:to_sym) if respond_to?(:role_groups) && !role_groups.nil?
+      return role_groups.map(&:to_sym) if respond_to?(:role_groups) && !role_groups.nil?
       @role_groups_list || [] #[:bloggers]
     end
   end

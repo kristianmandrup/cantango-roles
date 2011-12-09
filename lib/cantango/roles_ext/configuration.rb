@@ -1,9 +1,13 @@
 module CanTango
   class Configuration
-    autoload_modules :RoleGroups, :Roles, :System
-
     module Registry
-      autoload_modules :Role
+      sweet_scope :ns => {:CanTango => 'cantango/roles_ext'} do     
+        sweetload :Role
+      end
+    end
+
+    sweet_scope :ns => {:CanTango => 'cantango/roles_ext'} do     
+      sweetload :System, :RoleGroups, :Roles
     end
   end
 end

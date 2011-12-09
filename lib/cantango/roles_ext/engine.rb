@@ -1,7 +1,7 @@
 module CanTango
-  module Engine
+  class Engine
     if defined? CanTango::Permit
-      autoload_modules :Permit
+      sweetload :Permit
     end
   end
 end

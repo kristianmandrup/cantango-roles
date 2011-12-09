@@ -1,5 +1,7 @@
 module CanTango
   module Filter
-    autoload_modules :Role, :RoleGroup
+    sweet_scope :ns => {:CanTango => 'cantango/roles_ext'} do     
+      sweetload :Role, :RoleGroup
+    end
   end
 end

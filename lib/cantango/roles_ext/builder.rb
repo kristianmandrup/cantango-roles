@@ -1,7 +1,7 @@
 module CanTango
-  module Helpers
+  module Builder
     sweet_scope :ns => {:CanTango => 'cantango/roles_ext'} do     
-      sweetload :Role, :RoleGroup
+      sweetload :Permit
     end
   end
 end
