@@ -1,56 +1,17 @@
 # CanTango Roles
 
-Roles and Role groups extension for [CanTango](https://github.com/kristianmandrup/cantango)
+Roles and Role groups extension for [cantango-permits](https://github.com/kristianmandrup/cantango-permits)
 
-## Status: Dec 9, 2011
-
-Most specs except those for Permits have been completed and demonstrates that the functionality works as it should.
-
-## Ability helper
-
-* Ability::Helper
-  * Role
-  * RoleGroup
-
-These modules are typically included into an Ability in order to access the roles of the ability subject, typically a user (or in rare cases an account). 
-
-The `Role` module has a `#roles` method which returns the role list of the subject.
-The `RoleGroup` module has a `#role_groups` method which returns the role group list of the subject.
-
-## Configuration Registry
-
-Roles and RoleGroups configuration via a Registry.
-
-Roles configuration:
-
-```ruby
-CanTango.config do |config|
-  config.roles do |roles|
-    roles.register :admin, :guest, :basic
-    roles.system = :simple_roles
-    roles.exclude :admin # filter
-  end
-```
-
-Role groups configuration:
-
-```ruby
-CanTango.config do |config|
-  config.roles_groups do |role_groups|
-    role_groups.register :editors, :publishers
-    role_groups.system = :troles
-    role_groups.only :editors # filter
-  end
-end
-```
 
 ## Permits
 
-Role and RoleGroup Permits for the Permits engine Ability executor.
+This extension includes `Role` and `RoleGroup` Permits.
 
 ## Permit Generators
 
-Role and RoleGroup Permit Generators
+The gem includes `Role` and `RoleGroup` Permit generators
+
+### Using generators
 
 `rails g cantango:role_permit admin`
 
@@ -61,6 +22,8 @@ Role and RoleGroup Permit Generators
 ## Filters
 
 Role and RoleGroup filters can be used to filter out specific Role and RoleGroup Permits.
+
+See [Roles configuration](https://github.com/kristianmandrup/cantango-roles/wiki/Roles-Configuration)
 
 ## Helpers
 
