@@ -2,6 +2,9 @@
 
 Roles and Role groups extension for [cantango-permits](https://github.com/kristianmandrup/cantango-permits)
 
+See [Roles configuration](https://github.com/kristianmandrup/cantango-roles/wiki/Roles-Configuration) for how to configure roles and the Role-system to be used.
+
+See [wiki](https://github.com/kristianmandrup/cantango-roles/wiki) for more detailed info on usage etc.
 
 ## Permits
 
@@ -27,7 +30,7 @@ See [Roles configuration](https://github.com/kristianmandrup/cantango-roles/wiki
 
 ## Helpers
 
-Role and RoleGroup helper methods which can be reused in various places, such as Ability executors, Permits etc.
+The extension also includes some Role and RoleGroup helper modules, see [Ability helper modules](https://github.com/kristianmandrup/cantango-roles/wiki/Ability-Helper-modules).
 
 ## Contributing to cantango-roles
  
